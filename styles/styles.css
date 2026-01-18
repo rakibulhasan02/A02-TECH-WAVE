@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.fonts-inter{
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+}
+
+
+/* share-style */
+.gradient-color{
+    background:linear-gradient(to right,#F7E93F,#FB09B4,#9100F8)
+}
+.display-flex{
+    display: flex;
+}
+.pramary-p{
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: #ffffff;
+    opacity: 60%;
+}
+
+
+
+/* main-style */
