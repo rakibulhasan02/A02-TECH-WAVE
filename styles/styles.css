@@ -57,6 +57,29 @@ button:hover{
 .color-green{
     color: #00FF88;
 }
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(-15px);
+  }
+}
+
+.primary-transition{
+   
+     cursor: pointer;
+  transition: transform 0.2s ease , box-shadow 0.2s ease;
+    animation: fadeUp 2s infinite ease-out 2s;
+}
+.primary-transition:hover{
+         transform: scale(1);
+  box-shadow: 0 0 3px #00ffa3;
+        }
+
+
 /* main-style */
 
 .navbar{
@@ -171,8 +194,24 @@ margin: 0 auto;
    padding: 12px 16px;
     border-radius: 30px;
 }
+.ch-button{
+ position: absolute;
+  top: 2.5rem;    
+  right: 0;
+  transform: translateX(20%) translateY(-35%);
+  z-index: 30;
 
-
+}
+.ch-button-details{
+     background-color: #00ffa3;
+  color: #0a0015; 
+  font-size: 11px;
+  font-weight: 900;           
+padding:0.375rem 1.3rem;
+  border-radius: 9999px; 
+  box-shadow: 0px 0px 3px #00ffa3; 
+  letter-spacing: 0.1em;
+}
 @media screen and (max-width:576px) {
     body{
         max-width:440px ;
@@ -197,6 +236,7 @@ margin: 0 auto;
 min-height: 60vh;
     padding: 40px 20px;
     background-position: center top;
+    /* background-size: contain; */
    
 }
 .banner-container{
