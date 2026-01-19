@@ -16,7 +16,9 @@ body{
 .header-color{
     background-color: #1A0B2E;
 }
-
+.padding-auto{
+    padding: auto;
+}
 .gradient-color{
   background: linear-gradient(90deg, #ff00cc, #3333ff);
   -webkit-background-clip: text;
@@ -82,7 +84,11 @@ button:hover{
   box-shadow: 0 0 3px #00ffa3;
         }
 
+.tech-border{
+     background-color: rgba(53, 17, 101, 0.4);
+    border-radius: 2.5rem;
 
+}
 /* main-style */
 
 .navbar{
@@ -262,8 +268,6 @@ padding:0.375rem 1.3rem;
 }
 
 
-
-
 /* footer section style */
 
 .footer{
@@ -302,6 +306,87 @@ padding:0.375rem 1.3rem;
     gap: .5rem;
 
 }
+/* techwave-section */
+
+
+.techwave-section{
+    background-color: #230E3D;
+    padding: 120px 200px;
+}
+.techwave-title{
+    text-align: center;
+    font-size: 1.5rem;
+    color: #FFFFFF;
+    margin-bottom: 2.5rem;
+}
+.tachwave-grid{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: repeat(3,1fr);
+    gap: 1.9rem;
+   
+}
+
+.tech-premium{
+    
+    /* border: 1px solid yellow; */
+    grid-row: span 2;
+    grid-column: span 2;
+    padding:9.5rem 2.5rem;
+
+}
+.tech-mobile{
+    /* border: 1px solid yellow; */
+    grid-column: span 3;
+    
+    padding: 2.5rem;
+}
+.tech-global{
+    /* border: 1px solid yellow; */
+        grid-column: span 3;
+
+    padding: 2.5rem;
+
+}
+.tech-exclusive{
+    /* border: 1px solid yellow; */
+    grid-column: span 3;
+    padding: 2.5rem;
+
+}
+.tech-rich{
+    grid-column: span 2;
+    /* border: 1px solid yellow; */
+    
+    padding: 2.5rem;
+   
+}
+/* .tech-card{
+    border: 1px solid seagreen;
+
+} */
+.tech-title{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+.tech-image{
+    height: 3.75rem;
+    width:3.75rem;
+    margin-bottom: 1rem;
+}
+/* .tech-im{
+    font-size: large;
+     height: 3.75rem;
+    width:3.75rem;
+    color: #FFFFFF;
+    margin-bottom: 1rem;
+} */
+ .tech-image i{
+    font-size: 50px;
+    /* margin-right: 8px; */
+   
+ } 
+
 
 @media screen and (max-width:576px) {
     body{
@@ -347,7 +432,23 @@ min-height: 60vh;
    gap: 2.5rem;
 }
 
+/* techwave-section */
+.techwave-section{
+    padding:2.5rem 1.25rem;
+}
+.techwave-title{
+    font-size: .9rem;   
+}
+.tachwave-grid{
+    grid-template-columns:repeat(1,1fr);
 
+}
+.tech-premium,.tech-rich{
+  grid-column: span 3;
+
+  grid-row:span 1;
+    padding: 2.5rem;
+}
 /* footer-section */
 /* .footer-container{
     width: 100%;
